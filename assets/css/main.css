@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* olive-green  -  #838D78 */
+
+:root{
+    --brand-color:#838D78;
+    --bg-color:#EAEAEA;
+}
+
+body{
+    background: var(--bg-color);
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    margin: 10px;
+    position: fixed;
+    background-color: var(--brand-color);
+    padding: 10px 40px;
+    border-radius: 50px;
+    border:2px solid #545c4c;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+nav > a > svg > path {
+    fill: whitesmoke;
+}
+
+.nav--links:hover >svg > path{
+    fill: rgb(200, 176, 20) !important;
+    transition: fill 1s ease;
+}
+
+#profile-section{
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    gap: 12vw;
+}
+
+#profile-pic{
+    width: 25vw;
+    border-radius: 50%;
+    border: 3px solid var(--brand-color);
+    opacity:0%;
+    margin-right: 2rem;
+}
+
+#profile-text-div{
+    width: 30vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2rem;
+}
+
+#profile-text-div > h2{
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--brand-color);
+}
+
+#profile-text-div > h4{
+    font-size: 30px;
+    color: #7d7d7d;
+}
+
+#profile-text-div > p{
+    font-size: 25px;
+    margin-top:2vh;
+}

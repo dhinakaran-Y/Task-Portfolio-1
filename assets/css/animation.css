@@ -1,0 +1,67 @@
+.anim--right-left.anim-color {
+  animation:
+    RightToLeft 1s forwards,
+    colorChange 6s infinite 1s linear;
+}
+
+@keyframes colorChange{
+    0%{
+        color: #648441;
+    }
+    40%{
+        color: #75237c;
+    }
+    70%{
+        color: #7c2343;
+    }
+    100%{
+        color: rgb(200, 176, 20);
+    }
+}
+
+/* .anim-color {
+    animation-name: colorChange;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+} */
+
+
+@keyframes leftToRight {
+    from{transform: translateX(-4rem); opacity: 0;}
+    to{transform: translateX(0rem); opacity: 1;}
+}
+
+.anim--left-right{
+   animation-name: leftToRight;
+   animation-duration: 1s;
+   animation-iteration-count: initial;
+   animation-fill-mode: forwards;
+}
+
+@keyframes RightToLeft {
+    from{transform: translateX(4rem); opacity: 0%;}
+    to{transform: translateX(0); opacity: 100% !important;}
+}
+
+.anim--right-left{
+   animation-name: RightToLeft;
+   animation-duration: 1s;
+   animation-iteration-count: initial;
+   animation-fill-mode: forwards;
+}
+
+@keyframes x-brief {
+    from{width: 0 ; opacity: 0%;}
+    to{width: 30vw ; opacity: 100% !important;}
+}
+
+.anim--navbar{
+   animation-name: x-brief;
+   animation-duration: 2s;
+   animation-iteration-count: initial;
+   animation-fill-mode: forwards;
+   transition: width 2s , opacity 2s;
+}
